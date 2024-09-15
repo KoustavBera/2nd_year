@@ -15,6 +15,6 @@ public class problem5 {
       for(int i=2;i<n;i++){
 			arr[i]=arr[i-1]+arr[i-2];
 		}
-		System.out.println("nth fibonaacci no is "+arr[n-1]);
+		System.out.println(n+"th fibonaacci no is "+arr[n-1]);
 	}
 }

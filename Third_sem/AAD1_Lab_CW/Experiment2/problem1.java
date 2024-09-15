@@ -23,21 +23,25 @@ public static void main(String[] args) {
 	}
 
 private static void contaguousSubArray(int[] arr) {
-int max=0,Index=-1,j=0;
-	int currLen = 0;
 
+	int maxLength = 0;
+	int currLen = 0;
+	int maxStartIndex = 0;
+	int startIndex=0;
 for(int i=1;i<arr.length;i++){
 	if(arr[i]==arr[i-1]+1){
 		currLen++;
-		Index = j;
 	}
 	else{
-		currLen=1;
-		j=i;
+		if(currLen > maxLength){
+			maxLength = currLen;
+			maxStartIndex = startIndex;
+		}
+		currLen = 1;
+		startIndex=i;
 	}
-	max=Math.max(max, currLen);
 }
-	System.out.println("Length of continuous subarray is "+max);
-	System.out.println("that starts from "+Index+" index");
+	System.out.println("Length of continuous subarray is "+maxLength);
+	System.out.println("that starts from "+maxStartIndex+" index");
 }
 }

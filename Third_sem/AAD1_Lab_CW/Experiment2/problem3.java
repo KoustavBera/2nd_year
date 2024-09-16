@@ -17,19 +17,39 @@ public class problem3 {
 		for(int i=0;i<n;i++){
 			arr[i]=sc.nextInt();
 		}
-		int max=0,min=0;
-		for(int i=0;i<n;i+=2){
-			if(i%2 == 0){
-				//max
-				for (int j=0;j<arr.length;j++) {
-					max=Math.max(max,arr[i]);
-				}
-			}
-			}
-			
-		System.out.println("Array");
-		for (int i : arr) {
-			System.out.print(i);
+	   
+		 ans = minmaxArray(arr,ans);
+		for(int i=0;i<ans.length;i++){
+			System.out.print(ans[i]+" ");
 		}
+}
+
+public static int[] minmaxArray(int[] arr, int[] ans) {
+	// Apply bubble sort
+	for (int i = 0; i < arr.length; i++) {
+		 for (int j = 0; j < arr.length - i - 1; j++) {
+			  if (arr[j] > arr[j + 1]) {
+					// Swap arr[j] and arr[j + 1]
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+			  }
+		 }
 	}
+
+	int max = arr.length - 1;  // Initialize max correctly
+	int min = 0;  // Min starts at 0
+
+	// Create min-max array
+	for (int i = 0; i < arr.length; i++) {
+		 if (i % 2 == 0) {
+			  ans[i] = arr[max];  // Take max value in even index
+			  max--;
+		 } else {
+			  ans[i] = arr[min];  // Take min value in odd index
+			  min++;
+		 }
+	}
+	return ans;
+}
 }

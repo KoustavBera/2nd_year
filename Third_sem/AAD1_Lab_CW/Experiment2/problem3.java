@@ -3,8 +3,11 @@ package Third_sem.AAD1_Lab_CW.Experiment2;
 import java.util.Scanner;
 
 // WAP to display maximum minimum array
+
 /* 
- * 
+ * the intuition is to sort the array in ascending order and then to create array and
+ * manipulate array elements as we want...one problem with this approach is its time and space
+ * complexity 
  */
 public class problem3 {
 	public static void main(String[] args) {

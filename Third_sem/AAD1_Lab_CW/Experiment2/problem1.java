@@ -3,8 +3,28 @@ package Third_sem.AAD1_Lab_CW.Experiment2;
 import java.util.Scanner;
 
 /**
- * problem1: Contagious subarray
+/**
+ * Problem: Find the longest contiguous subarray where each element is exactly one more than the previous.
+ * 
+ * Intuition: 
+ * - We want to identify the longest sequence of consecutive numbers in the array.
+ * - As we traverse the array, we check if the current element continues this sequence (i.e., is equal to the previous element +1).
+ * - If yes, we extend the current subarray. If no, we compare the current subarray’s length to the longest subarray found so far, and reset for a new subarray.
+ * 
+ * Approach:
+ * 1. We start by setting two lengths: one for the longest contiguous subarray found (`maxLength`) and one for the current subarray being checked (`currLen`).
+ * 2. As we loop through the array, we check if each element continues the sequence. 
+ * 3. If it does, we extend the current subarray length.
+ * 4. If not, we check if the current subarray is the longest one we’ve found and reset the counter to start tracking a new subarray.
+ * 5. Finally, after the loop, we check if the last subarray was the longest one.
+ * 
+ * Time Complexity: O(n), as we are traversing the array only once.
+ * 
+ * Example:
+ * Input: [1, 2, 3, 5, 6, 7, 8, 10]
+ * Output: The longest contiguous subarray is from index 3 to 7 with a length of 4.
  */
+
 public class problem1 {
 public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);

@@ -66,6 +66,9 @@ public static void main(String[] args) {
 		}
 
 		// After the loop, check if the last subarray was the longest
+		/*
+		 * if the current length is the new longest then update the maxStartIndex to startIndex
+		 */
 		if (currLen > maxLength) {
 			 maxLength = currLen;
 			 maxStartIndex = startIndex;

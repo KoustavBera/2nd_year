@@ -30,6 +30,6 @@
  if(idx<0){
 	  return 0;
  }
- return (sumOfNNumbersUsingRecursion(arr, idx-1))+arr[idx];
+ return sumOfNNumbersUsingRecursion(arr, idx-1))+arr[idx];
 	  }
  }

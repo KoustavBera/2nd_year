@@ -3,6 +3,9 @@ import java.util.Scanner;
 
 /*  
  * to smallest positive missing number
+ * Intuition: we believe our function smallestPositiveMissingNumberbyRecursion() will give
+ * us the smallest positive missing number without checking the last term of the array.
+ * Our task is to check the last term previous term = arr[idx] - 1 ;  then we all rely on our faith
  */
 /**
  * problem7

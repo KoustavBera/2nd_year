@@ -1,7 +1,16 @@
-package AD;
+package Third_sem.AAD1_Lab_CW.Experiment3.AD;
 import java.util.Scanner;
 /*  
  * to compute nth power of a number
+ * 
+ * keep these things in mind while computing a to the power of b
+ * 1)a^0 = 1
+ * 2)a^1=a
+ * 3)a^even eg a^6 = a^3 * a^3  
+ * 4)a^odd  eg a^7 = a^3 * a^3 * a 
+ * 
+ * put these concepts in the function together and boom our functionn is ready
+ * 
  * 
  */
 public class problem6 {

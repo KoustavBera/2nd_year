@@ -1,7 +1,10 @@
-package AD;
+package Third_sem.AAD1_Lab_CW.Experiment3.AD;
 import java.util.Scanner;
 /**  
  * factorial of number
+ * 
+ * Intuition: we believe the findFactorial() will give give us factorial of n-1 terms. our work is to
+ * add last term n to it to get the full factorial
  * 
  */
 /**

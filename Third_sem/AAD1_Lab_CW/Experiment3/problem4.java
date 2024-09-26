@@ -1,7 +1,9 @@
-package AD;
+package Third_sem.AAD1_Lab_CW.Experiment3.AD;
 import java.util.Scanner;
 /**  
  * WAP to generate nth fibonacci number
+ * Intuition:  we believe that findFibonacci() will give us 1st and 2nd fibonacci number
+ * and for any nth input it will return addition n-1th and n-2th number
  */
 /**
  * problem4

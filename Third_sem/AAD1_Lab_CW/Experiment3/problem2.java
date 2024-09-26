@@ -1,7 +1,12 @@
-package AD;
+package Third_sem.AAD1_Lab_CW.Experiment3.AD;
+
 import java.util.Scanner;
 /** 
  * Find maximum and minimum
+ * 
+ * Intuition: we believe that function recursionMaxMin() will send us the min max of the array
+ * with out checking the last element of the array(arr[idx]). Our work is to compare this last element(arr[idx]) with
+ * min and max --> if arr[idx]<min then the new min is arr[idx], if arr[idx]>max the new max is arr[idx]
  */
 /**
  * problem2

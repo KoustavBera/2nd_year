@@ -35,12 +35,13 @@ public class problem6 {
           if(p==1){
             return b;
           }
-          int smallAns = power(b,p/2)*power(b, p/2);
+          int smallAns = power(b,p/2);
+
           if(p%2==0){
-            return smallAns;
+            return smallAns*smallAns;
           }
           else{
-            return smallAns*b;
+            return smallAns*smallAns*b;
           }
         }
     }

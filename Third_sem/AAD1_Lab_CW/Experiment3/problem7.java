@@ -30,9 +30,10 @@ public class problem7 {
       if(idx<0){
         return true;
       }
+      
       if(arr[idx]>0){
         if(arr[idx-1]!=arr[idx]-1){
-            System.out.println(arr[idx]-1);
+            System.out.println("smallest positive missing number is "+ (arr[idx]-1)+" which should be inserted in index "+(idx-1));
             return false;
         }
     }

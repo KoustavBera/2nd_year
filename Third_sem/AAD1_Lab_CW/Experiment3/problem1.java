@@ -1,6 +1,4 @@
-/** 
- * Find sum of n numbers using RF
- */
+
 
  import java.util.Scanner;
 

@@ -1,4 +1,5 @@
-package AD;
+
+
 import java.util.Scanner;
 
 /*  

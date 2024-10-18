@@ -1,4 +1,4 @@
-package Third_sem.AAD1_Lab_CW.Experiment3.AD;
+
 import java.util.Scanner;
 /**  
  * factorial of number

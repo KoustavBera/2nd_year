@@ -7,12 +7,18 @@ public class q3 {
 		break;
 		}
 	}
+	//if array already sorted
+	if(startindex == -1){
+		System.out.println("Response: "+false);
+		return;
+	}
  endindex=startindex;
 	for(int i=startindex;i<arr.length;i++){
 		if(arr[i]<arr[i-1]){
 		 endindex++;
 			}
 	}
+	System.out.println("Response: "+true);
 	System.out.println("start index: "+(startindex+1));
 	System.out.println("end index: "+(endindex+1));
 	}

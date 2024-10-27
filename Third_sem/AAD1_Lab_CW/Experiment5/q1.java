@@ -39,7 +39,11 @@ public class q1 {
 			}
 			printArr(arr);
 			}
-		
-		}
+			}
+			public static void printArr(int[] arr) {
+				System.out.println();
+				for (int i = 0; i < arr.length; i++) {
+					System.out.print(arr[i] + " ");
+				}
 	}
-
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<style> 
+		.innermost * { 
+			display: block; 
+			border: 2px solid red; 
+			color: blue; 
+			padding: 5px; 
+			margin: 15px; 
+		} 
+	</style> 
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+	<script> 
+		$(document).ready(function() { 
+			$("div").find("span").css({ 
+				"color": "green", 
+				"border": "2px solid blue" 
+			}); 
+		}); 
+	</script> 
+</head> 
+
+<body class="innermost"style="width:500px;"> 
+
+	<div> 
+	current element 
+		<p>child 
+			<span>grandchild</span> 
+		</p> 
+	</div> 
+
+</body> 
+
+</html> 

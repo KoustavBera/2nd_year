@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("tr:even").css("background-color", "orangered");
+            $("button.hide").click(function(){
+                $("tr:odd").hide();
+            });
+            $("button.show").click(function(){
+                $("tr:odd").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to my Web Page</h1>
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Tata</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Nokia</td>
+            <td>Finland</td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td>Korea</td>
+        </tr>
+    </table>
+    <button class="hide" type="button">hide</button>
+    <button class="show" type="button">show</button>
+</body>
+</html>

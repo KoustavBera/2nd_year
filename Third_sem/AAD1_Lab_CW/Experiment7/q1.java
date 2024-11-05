@@ -1,4 +1,4 @@
-// Given an unsorted list of n number. WAJ to find th efirst element which is  repeated
+// Given an unsorted list of n number. WAJ to find the first element which is  repeated
 import java.util.*;
 /**
 	* q1

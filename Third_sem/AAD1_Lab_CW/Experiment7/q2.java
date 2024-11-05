@@ -17,14 +17,14 @@ public class q2 {
 	}
 
 	private static void findDuplicates(int[] arr) {
-		boolean[] isPresent = new boolean[arr.length*75];
+		int[] isPresent = new int[arr.length*75];
 		for(int i=0;i<arr.length;i++){
-			if(!isPresent[arr[i]]){
-				isPresent[arr[i]] = true;
+				isPresent[arr[i]]++;
 			}
-			else{
-				System.out.println(arr[i]);
+			for(int i=0;i<isPresent.length;i++){
+				if(isPresent[i]>1){
+     System.out.println(arr[i]);
+				}
 			}
 		}
-	}
 }

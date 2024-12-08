@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        height: 40px;
+        width: 100px;
+        background-color: rgb(234, 233, 255);
+        border: 2px solid;
+        margin: 40px;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      .dim {
+        background-color: rgba(255, 255, 0, 0.332);
+      }
+      button {
+        border: none;
+        height: 27px;
+        width: 100px;
+        padding: 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: black;
+        color: white;
+      }
+      .b1 {
+        background-color: yellow;
+        color: black;
+      }
+      .b2 {
+        background-color: rgba(255, 255, 0, 0.332);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Add me as ur next blit</div>
+    <button class="b1">Highlight</button><button class="b2">Dim</button>
+  </body>
+  <script>
+    $(".b1").click(() => {
+      $("div").removeClass("dim").addClass("highlight");
+    });
+    $(".b2").click(() => {
+      $("div").removeClass("highlight").addClass("dim");
+    });
+  </script>
+</html>

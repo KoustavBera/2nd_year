@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+      }
+      .popupbox {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(74, 21, 74);
+        border: 2px solid red;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+      }
+      .closepopup {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="popupbox">
+        <div class="closepopup">&times;</div>
+        this is a custom popup box;
+      </div>
+
+      <button class="b1">Show pop up</button>
+    </div>
+  </body>
+  <script>
+    $(".closepopup").click(() => {
+      $(".popupbox").hide();
+    });
+    $(".b1").click(() => {
+      $(".popupbox").show();
+    });
+  </script>
+</html>

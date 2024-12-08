@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      button {
+        border: none;
+        height: 27px;
+        width: 57px;
+        padding: 20px;
+      }
+      #b1 {
+        background-color: red;
+        color: white;
+      }
+      #b2 {
+        background-color: blue;
+        color: white;
+      }
+      #b3 {
+        background-color: greenyellow;
+        color: white;
+      }
+      #b4 {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Hi I am Koustav</p>
+    </div>
+    <button id="b1">Red</button>
+    <button id="b2">Blue</button>
+    <button id="b3">Green</button>
+    <button id="b4">Toggle</button>
+  </body>
+  <script>
+    $("#b1").click(() => {
+      $("body").css("backgroundColor", "red");
+      $("#b1").css({ backgroundColor: "white", color: "red" });
+      $("#b2").css({ backgroundColor: "blue", color: "white" });
+      $("#b3").css({ backgroundColor: "green", color: "white" });
+    });
+    $("#b2").click(() => {
+      $("body").css("backgroundColor", "blue");
+      $("#b2").css({ backgroundColor: "white", color: "blue" });
+      $("#b1").css({ backgroundColor: "red", color: "white" });
+      $("#b3").css({ backgroundColor: "green", color: "white" });
+    });
+    $("#b3").click(() => {
+      $("body").css("backgroundColor", "green");
+      $("#b3").css({ backgroundColor: "white", color: "green" });
+      $("#b1").css({ backgroundColor: "red", color: "white" });
+      $("#b2").css({ backgroundColor: "blue", color: "white" });
+    });
+    $("#b4").click(() => {
+      $("div").toggle();
+    });
+  </script>
+</html>
